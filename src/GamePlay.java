@@ -17,6 +17,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
     private int ballXdir = -1;
     private int ballYdir = -2;
     private MapGenerator map;
+    // private boolean redrawsquares = false;
 
     public GamePlay() {
         map = new MapGenerator(3, 7);
@@ -132,8 +133,10 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
         }
 
         repaint(); // call paint again
+        // map.recolor = false;
 
     }
+
 
     @Override
     public void keyTyped(KeyEvent e) { }
